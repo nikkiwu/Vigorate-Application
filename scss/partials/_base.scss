@@ -2,9 +2,34 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Century Gothic", sans-serif;
 }
 
-h1{
+h1 {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+i {
+  padding: 10px 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 2rem;
+  background: $white;
+  color: #34495E;
+  text-align: center;
+}
+
+button {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }

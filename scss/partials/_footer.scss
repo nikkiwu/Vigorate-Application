@@ -1,0 +1,31 @@
+footer {
+  @include flex(center, center, column wrap);
+  width: 100%;
+
+  .contact {
+    background: $footer-color;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  .footer-list {
+    background: $footer-link;
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 0.5rem;
+
+    ul li {
+      color: $white;
+      display: inline-block;
+      list-style: none;
+      &:nth-child(even){
+        padding: 0 5px;
+        border-left: 2px solid $white;
+        border-right: 2px solid $white;
+      }
+    }
+  }
+}

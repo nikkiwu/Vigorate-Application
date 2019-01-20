@@ -1,7 +1,12 @@
+@import "variables";
 
 .header-one {
   width: 90%;
   margin: 0 auto;
+
+  h1 {
+    padding: 2rem 0;
+  }
 
   ul {
     padding-top: 1rem;
@@ -25,17 +30,31 @@
   ul li {
     list-style-type: none;
     text-decoration: none;
+    padding: 0.5rem;
+
+    &:nth-child(1) {
+      padding-top: 1rem;
+    }
   }
 
+  h2 {
+    padding: 0.3rem 0 1rem 0;
+  }
 
+}
+
+.price-basic {
+  padding: 2rem 0;
 }
 
 .price-basic-header {
-  color: white;
+  color: $white;
   background: #4FC0E9;
+  padding: 1rem;
 }
 
 .price-basic-body {
+  padding: 1rem 3rem;
   background: #D7F1F9;
 
   h1 {
@@ -44,23 +63,35 @@
 }
 
 .price-basic-button {
-  background: #E6E9ED;
+  background: $button-background;
 
   button {
     background: #4FC0E9;
+    color: $white;
   }
+}
+
+.price-unlimited {
+  padding: 2rem 0;
 }
 
 .price-unlimited-header {
   background: #FFCE54;
-
+  color: $white;
+  padding: 1rem;
 
 }
 
 .price-unlimited-body {
+  padding: 1rem 3rem;
   background: #FFFAED;
 }
 
 .price-unlimited-button {
   background: $button-background;
+
+  button {
+    background: #FFCE54;
+    color: $white;
+  }
 }
