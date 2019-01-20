@@ -1,0 +1,27 @@
+.logo{
+  h1{
+    text-transform: capitalize;
+  }
+}
+
+header{
+  color: white;
+  background: #34495E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  h1{
+    margin: 0 auto;
+  }
+  hr{
+    width: 80%;
+  }
+  nav{
+    ul li{
+      padding-bottom: 1rem;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+
+.header-one {
+  width: 90%;
+  margin: 0 auto;
+
+  ul {
+    padding-top: 1rem;
+    display: flex;
+    @include flex(center, center, row wrap);
+
+    li {
+      padding: 1rem 0;
+      text-transform: capitalize;
+    }
+  }
+}
+
+
+.price-template {
+  width: 90%;
+  margin: 0 auto;
+  @include flex(center, center, column wrap);
+  text-align: center;
+
+  ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+
+}
+
+.price-basic-header {
+  color: white;
+  background: #4FC0E9;
+}
+
+.price-basic-body {
+  background: #D7F1F9;
+
+  h1 {
+    margin: 0 auto;
+  }
+}
+
+.price-basic-button {
+  background: #E6E9ED;
+
+  button {
+    background: #4FC0E9;
+  }
+}
+
+.price-unlimited-header {
+  background: #FFCE54;
+
+
+}
+
+.price-unlimited-body {
+  background: #FFFAED;
+}
+
+.price-unlimited-button {
+  background: $button-background;
+}
