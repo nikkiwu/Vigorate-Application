@@ -9,6 +9,9 @@ footer {
     padding: 1rem;
     color: $white;
     text-transform: capitalize;
+    @include desktop{
+      display: none;
+    }
   }
 
   .footer-list {
@@ -16,6 +19,9 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1.2rem 0.5rem;
+    @include desktop{
+      padding: 2rem 1rem;
+    }
 
     ul li {
       color: $white;

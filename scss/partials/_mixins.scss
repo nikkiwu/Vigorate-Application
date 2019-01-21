@@ -4,3 +4,10 @@
   align-items: $align;
   flex-flow: $flex-flow;
 }
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content
+
+  }
+}

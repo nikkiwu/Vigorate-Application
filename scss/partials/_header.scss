@@ -1,28 +1,35 @@
-.logo{
-  h1{
+.logo {
+  h1 {
     text-transform: capitalize;
   }
 }
 
-header{
+header {
   color: white;
   background: #34495E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
+  @include flex(center, center, column nowrap);
   padding: 1rem;
-  h1{
+  @include desktop {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  h1 {
     padding: 1rem 0;
     margin: 0 auto;
   }
-  hr{
+
+  hr {
     width: 80%;
     height: 2px;
     background: $white;
+    @include desktop {
+      display: none;
+    }
   }
-  nav{
-    ul li{
+
+  nav {
+    ul li {
       padding: 1rem 0.5rem;
       display: inline-block;
     }
